@@ -99,7 +99,7 @@ def Halaman_pendapatan():
 # Fungsi untuk halaman ketiga
 def barChart():
     bar_df= filter_df 
-    st.title('Halaman Ketiga')
+    st.title('Halaman barChart')
     y = st.selectbox(label='Pilih Opsi Sumbu Y', options=['customer_state', 'customer_city', 'customer_unique_id', 'seller_id', 'product_category_name_english'])
     x = st.selectbox(label='Pilih Opsi Sumbu X', options=['price', 'order_id'])
     sort_val = st.selectbox(label='Pilih Opsi Sorting', options=['Terbesar', 'Terkecil'])
