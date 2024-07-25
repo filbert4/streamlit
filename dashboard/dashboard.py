@@ -117,7 +117,7 @@ def barChart():
             bar_df['Total'], 
             edgecolor='white', linewidth=0.7)
     for i in range(len(bar_df)):
-        ax.text(bar_df['Total'].iloc[i], i, f'{format_currency} {'{:,}'.format(int(bar_df['Total'].iloc[i]))}', va='center')
+        ax.text(bar_df['Total'].iloc[i], i, f'{format_currency} {int(bar_df['Total'].iloc[i]):,}', va='center')
     ax.set_xlim(0, max(bar_df['Total']) * 1.15)
     ax.xaxis.set_major_formatter(lambda x, _: f'{x:,.0f}')
     ax.invert_yaxis()
